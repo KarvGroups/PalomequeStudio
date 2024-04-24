@@ -10,7 +10,7 @@ const arrowRightClass = 'ri-arrow-right-s-line';
 
 closeBtn.addEventListener('click', () => {
   if (mobileNav.classList.contains(navClosedClass)) {
-    mobileNav.classList.toggle(navOpenedClass);
+    mobileNav.classList.toggle(navOpenedClass);                                                                                                                                                                    
 
     closeBtnIcn.classList.toggle(arrowLeftClass);
     closeBtnIcn.classList.toggle(arrowRightClass);
