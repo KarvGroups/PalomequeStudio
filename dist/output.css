@@ -9,6 +9,7 @@
 :root{
   --ColorBlueClaro: #3eabe1;
   --ColorBlueClaroHover: #3293c4;
+  --ColoGradient: linear-gradient(90deg, #3eabe1, #004AAD);
 
   --ColorBlueEscuro: #004AAD;
 }
@@ -1035,7 +1036,7 @@ video {
 }
 
 .bg-services {
-  background-image: url(../../assets/img/services/bg.svg);
+  background-image: url(../../assets/img/services/bg.png);
 }
 
 .bg-testimonials {
