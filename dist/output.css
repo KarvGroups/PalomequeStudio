@@ -6,7 +6,12 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+:root{
+  --ColorBlueClaro: #3eabe1;
+  --ColorBlueClaroHover: #3293c4;
 
+  --ColorBlueEscuro: #004AAD;
+}
 *,
 ::before,
 ::after {
@@ -1237,13 +1242,11 @@ video {
 }
 
 .text-accent {
-  --tw-text-opacity: 1;
-  color: rgb(28 188 207 / var(--tw-text-opacity));
+  color: var(--ColorBlueClaro);
 }
 
 .text-accent-tertiary {
-  --tw-text-opacity: 1;
-  color: rgb(144 198 205 / var(--tw-text-opacity));
+  color: var(--ColorBlueClaro);
 }
 
 .text-primary {
@@ -1397,15 +1400,13 @@ h6 {
 }
 
 .btn-accent {
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 188 207 / var(--tw-bg-opacity));
+  background: var(--ColorBlueClaro);
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .btn-accent:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 171 188 / var(--tw-bg-opacity));
+  background: var(--ColorBlueClaroHover);
 }
 
 .btn-white {
@@ -1422,7 +1423,7 @@ h6 {
 .btn-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(28 188 207 / var(--tw-border-opacity));
+  border-color: var(--ColorBlueClaro);
   background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity));
@@ -1431,7 +1432,7 @@ h6 {
 .btn-outline:hover {
   border-color: transparent;
   --tw-bg-opacity: 1;
-  background-color: rgb(28 188 207 / var(--tw-bg-opacity));
+  background-color:var(--ColorBlueClaroHover);
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
