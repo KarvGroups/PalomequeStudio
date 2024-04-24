@@ -7,8 +7,8 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 :root{
-  --ColorBlueClaro: #32A5AB;
-  --ColorBlueClaroHover: #2d8f94;
+  --ColorBlueClaro: #2172a7;
+  --ColorBlueClaroHover: #2983be;
   --ColoGradient: linear-gradient(90deg, #3eabe1, #004AAD);
 
   --ColorBlueEscuro: #004AAD;
