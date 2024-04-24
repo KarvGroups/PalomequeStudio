@@ -45,8 +45,8 @@ faqItems.forEach((item) => {
 const sr = ScrollReveal({
   origin: 'bottom',
   distance: '60px',
-  duration: 3000,
-  delay: 600,
+  duration: 2000,
+  delay: 100,
   // reset: true // resets animation
 });
 
