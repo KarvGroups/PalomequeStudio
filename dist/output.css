@@ -8,7 +8,7 @@
 */
 :root{
   --ColorBlueClaro: #32A5AB;
-  --ColorBlueClaroHover: #3293c4;
+  --ColorBlueClaroHover: #2d8f94;
   --ColoGradient: linear-gradient(90deg, #3eabe1, #004AAD);
 
   --ColorBlueEscuro: #004AAD;
@@ -1003,8 +1003,10 @@ video {
 }
 
 .bg-accent {
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 188 207 / var(--tw-bg-opacity));
+    background-image: url(../../assets/img/newsletter/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .bg-accent-tertiary {
