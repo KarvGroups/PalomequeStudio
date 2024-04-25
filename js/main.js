@@ -17,6 +17,7 @@ closeBtn.addEventListener('click', () => {
   }
 });
 
+
 // swiper
 const swiper = new Swiper('.swiper', {
   loop: true,
@@ -117,6 +118,8 @@ sr.reveal('.brands__logo', {
 // newsletter
 sr.reveal('.newsletter');
 sr.reveal('.newsletter__container');
+
+
 
 // footer
 sr.reveal('.footer__item', {
