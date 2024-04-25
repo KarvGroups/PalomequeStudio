@@ -125,3 +125,28 @@ sr.reveal('.footer__item', {
   interval: 100,
   origin: 'bottom',
 });
+let isMouseDown = false;
+let startX;
+let scrollLeft;
+
+document.getElementById('containerServices').addEventListener('mousedown', (e) => {
+    isMouseDown = true;
+    startX = e.pageX - document.getElementById('containerServices').offsetLeft;
+    scrollLeft = document.getElementById('containerServices').scrollLeft;
+});
+
+document.getElementById('containerServices').addEventListener('mouseleave', () => {
+    isMouseDown = false;
+});
+
+document.getElementById('containerServices').addEventListener('mouseup', () => {
+    isMouseDown = false;
+});
+
+document.getElementById('containerServices').addEventListener('mousemove', (e) => {
+    if (!isMouseDown) return;
+    e.preventDefault();
+    const x = e.pageX - document.getElementById('containerServices').offsetLeft;
+    const walk = (x - startX) * 1;
+    document.getElementById('containerServices').scrollLeft = scrollLeft - walk;
+});
