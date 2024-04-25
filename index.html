@@ -505,8 +505,7 @@
               <h1 class="text-3xl font-bold mb-4">Minha Localização</h1>
               <!-- Div para exibir o mapa -->
               
-                <div id="map" style="height:320px; width:100%;"></div>
-              
+              <div id="map" style="height:320px; width:100%;"></div>
               
             </div>
           </div>
@@ -1374,6 +1373,24 @@
     <script src="js/scrollreveal.min.js"></script>
     <!-- main -->
     <script src="js/main.js"></script>
+    <script>function initMap() {
+      // Coordenadas da sua localização
+      var myLatLng = {lat: -22.9068, lng: -43.1729};
+    
+      // Cria um novo mapa
+      var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 15 // Nível de zoom
+      });
+    
+      // Cria um marcador para sua localização
+      var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Minha Localização'
+      });
+    }
+    </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN_6wfI5dnxZmwdmlwFsOKPtYg9S-evMs&callback=initMap"
       async
