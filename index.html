@@ -21,6 +21,18 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <style>
+      @font-face {
+          font-family: 'cheque';
+          src: url('../../assets/fontes/Cheque-Regular.otf') format('OpenType');
+      }
+      @font-face {
+          font-family: 'cheque-bold';
+          src: url('../../assets/fontes/Cheque-Black.otf') format('OpenType');
+      }
+      .h1Font{
+        font-size:xxx-large;
+        font-family: cheque, sans-serif;
+      }
 
       #containerServices::-webkit-scrollbar {
         width: 20px;
@@ -47,6 +59,12 @@
       }
       .container-f1 >a{
         margin-bottom: 45px !important;
+      }
+      @media (min-width: 830px) {
+        .h1Font{
+          font-size:83px;
+          font-family: cheque, sans-serif;
+        }
       }
       @media (max-width: 1330px) {
         #logo-footer{
@@ -283,7 +301,7 @@
               </div>
             </div>
             <!-- title -->
-            <h1 class="h1 mb-6 select-none">STUDIO PALOMEQUE</h1>
+            <h1 class="mb-6 select-none h1Font">STUDIO PALOMEQUE</h1>
             <!-- desc -->
             <p class="mb-[42px] md:max-w-xl select-none">
               Marcar seu horário é simples, e estamos entusiasmados para tornar
@@ -397,7 +415,7 @@
             <!-- grid item title -->
             <h3 class="h3 mb-[10px]">Depilação</h3>
             <!-- grid item description -->
-            <p class="font-light leading-normal max-w-[300px]" style="font-size: 16px;">
+            <p class="font-light leading-normal max-w-[300px]" style="font-size: 14px;">
               Desfrute de uma pele suave e livre de pelos com os nossos serviços
               de depilação. Utilizando técnicas avançadas, oferecemos remoção de
               pelos eficaz e confortável, seja através de Cera ou do nosso
@@ -415,7 +433,7 @@
             <!-- grid item title -->
             <h3 class="h3 mb-[10px]">Estetica</h3>
             <!-- grid item description -->
-            <p class="font-light leading-normal max-w-[300px]" style="font-size: 16px;">
+            <p class="font-light leading-normal max-w-[300px]" style="font-size: 14px;">
               Descubra o poder da verdadeira transformação com nossos
               tratamentos de estética. Da revitalização com Hydragloss ao
               aprimoramento do Design de Sobrancelhas, oferecemos uma ampla gama
@@ -434,7 +452,7 @@
             <!-- grid item title -->
             <h3 class="h3 mb-[10px]">Cuidados com o Rosto</h3>
             <!-- grid item description -->
-            <p class="font-light leading-normal max-w-[300px]" style="font-size: 16px;">
+            <p class="font-light leading-normal max-w-[300px]" style="font-size: 14px;">
               Na busca pela verdadeira beleza, a saúde da sua pele é essencial.
               Oferecemos uma gama de tratamentos especializados em cuidados
               faciais, dedicados a limpar e purificar sua pele, removendo
@@ -452,7 +470,7 @@
             <!-- grid item title -->
             <h3 class="h3 mb-[10px]">Manicure & Pedicure</h3>
             <!-- grid item description -->
-            <p class="font-light leading-normal max-w-[300px]" style="font-size: 16px;">
+            <p class="font-light leading-normal max-w-[300px]" style="font-size: 14px;">
               Permita-nos cuidar das suas mãos e pés com nossos serviços de
               manicure e pedicure. Mime-se com tratamentos especializados que
               vão além da estética, nutrindo e embelezando suas unhas para uma
@@ -588,6 +606,8 @@
                       >
                         Cliente
                       </div>
+                      <br>
+                      <br>
                     </div>
                   </div>
                 </div>
@@ -641,7 +661,7 @@
           <!-- additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- slide 1 -->
-            <div class="swiper-slide" style="margin: 0px 20px;">
+            <div class="swiper-slide" style="padding: 0px 30px;">
               
               <div class="flex flex-col md:flex-row gap-9" >
                 <!-- item -->
@@ -675,7 +695,7 @@
               
             </div>
             <!-- slide 2 -->
-            <div class="swiper-slide" style="margin: 0px 20px;">
+            <div class="swiper-slide" style="padding: 0px 30px;">
               <div class="flex flex-col md:flex-row gap-9">
                 <!-- item -->
                 <div class="flex-1 flex flex-col items-center">
@@ -706,7 +726,7 @@
               </div>
             </div>
             <!-- slide 3 -->
-            <div class="swiper-slide" style="margin: 0px 20px;">
+            <div class="swiper-slide" style="padding: 0px 30px;">
               <div class="flex flex-col md:flex-row gap-9">
                 <!-- item -->
                 <div class="flex-1 flex flex-col items-center">
@@ -891,7 +911,7 @@
     <section id="item-7" class="blog">
       <div class="container mx-auto">
         <h2 class="blog__title h2 mb-[50px] text-center xl:text-left">
-          Nossos Serviços<
+          Nossos Serviços
         </h2>
         <!-- blog posts -->
 
